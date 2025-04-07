@@ -14,4 +14,25 @@ export const routes: Routes = [
     path: 'login',
     loadComponent: () => import('./login/login.page').then( m => m.LoginPage)
   },
+
+  
+    {
+      path: 'splash',
+      loadComponent: () => import('./splash/splash.page').then(m => m.SplashPage),
+    },
+    {
+      path: '',
+      redirectTo: 'splash',
+      pathMatch: 'full',
+    },
+    
+{
+  path : 'profile',
+  loadComponent: () => import('./profile/profile.page').then((m) => m.ProfilePage)
+},
+  {
+    path: 'profile',
+    loadComponent: () => import('./profile/profile.page').then( m => m.ProfilePage)
+  }
+  
 ];

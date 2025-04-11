@@ -20,12 +20,14 @@ export class SplashPage implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       const token = localStorage.getItem('token');
+      console.log('Token from splash:', token);
+      
       if (token) {
-        this.router.navigateByUrl('/home');
-      } else {
         this.router.navigateByUrl('/login');
+      } else {
+        this.router.navigateByUrl('/home');
       }
-    }, 2000); // 2 seconds splash delay
+    }, 3000); // 2 seconds splash delay
   }
 }
   

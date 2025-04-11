@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton, IonCardContent, IonAvatar, IonItem, IonIcon,  IonLabel,  IonList, IonListHeader, IonFab, IonFabButton, IonBackButton, IonButtons} from '@ionic/angular/standalone';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
@@ -11,7 +11,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   templateUrl: './profile.page.html',
   styleUrls: ['./profile.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButton]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButton, IonCardContent, IonAvatar, IonItem, IonIcon,  IonLabel,  IonList, IonListHeader, IonFab, IonFabButton, IonBackButton, IonButtons ]
 })
 export class ProfilePage implements OnInit {
   user: any;
